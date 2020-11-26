@@ -1,0 +1,37 @@
+{
+  "name": "omeclone",
+  "version": "1.0.0",
+  "description": "Clone of omegle.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "start": "pm2 start process.json",
+    "restart": "pm2 restart all",
+    "stop": "pm2 stop all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdlsvnit/omeclone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wdlsvnit/omeclone/issues"
+  },
+  "homepage": "https://github.com/wdlsvnit/omeclone#readme",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "gulp": "^3.9.1",
+    "hbs": "^4.0.1",
+    "moment": "^2.20.1",
+    "pm2": "^2.10.1",
+    "socket.io": "^2.0.4",
+    "uniqid": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1"
+  }
+}

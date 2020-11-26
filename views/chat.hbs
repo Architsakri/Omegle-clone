@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/toastr/toastr.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>Chat: Omeclone</title>
+</head>
+
+<body class="chat-body">
+  <div class="ui grid">
+    <div class="row outer">
+      <div class="one wide column"></div>
+      <div class="fourteen wide column">
+        <div class="ui raised segment header centered semi top">
+          <div>
+            <i class="user icon"></i>
+            {{ userName }}
+          </div>
+        </div>
+        <div class="ui vertical grid" id="msgs">
+          <div class="sixteen column row"></div>
+          <div class="sixteen column row"></div>
+        </div>
+      </div>
+    </div>
+    <div class="one wide column"></div>
+    <div class="row">
+      <div class="five wide column"></div>
+      <div class="six wide column">
+        <div class="ui mini modal transition tada" id="confirm">
+          <div class="header">
+            End This Chat
+          </div>
+          <div class="content">
+            <p>Are you sure you want to end this chat?</p>
+          </div>
+          <div class="actions">
+            <div class="ui teal button" id="cancel">
+              No
+            </div>
+            <div class="ui red right labeled icon button" id="close">
+              Yes
+              <i class="sign out icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="five wide column"></div>
+    </div>
+  </div>
+  <div class="ui raised segment sixteen column row full bottom">
+    <div class="ui action icon input full">
+      <button class="ui red right labeled icon button" id="endbtn">
+        <i class="ban icon"></i>
+        <span class="txt">End</span>
+      </button>
+      <a href="/chat">
+        <button class="ui teal icon button hide" id="newbtn">
+          <span>New</span>
+        </button>
+      </a>
+      <input type="text" placeholder="Please wait for another user..." id="message" disabled="true" tabindex="0">
+      <button class="ui teal labeled icon button" id="sendbtn">
+        <i class="fitted send icon"></i>
+        <span class="txt">Send</span>
+      </button>
+      <a href="/">
+        <button class="ui red icon button right-float hide" id="homebtn">
+          <span>Home</span>
+        </button>
+      </a>
+    </div>
+  </div>
+</body>
+<script src="/bower_components/Autolinker.js/dist/Autolinker.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/socket.io-client/dist/socket.io.js"></script>
+<script src="/bower_components/toastr/toastr.min.js"></script>
+<script src="js/chat.js"></script>
+<script src="/bower_components/aes-js/index.js"></script>
+<script src="js/end.js"></script>
+
+</html>
