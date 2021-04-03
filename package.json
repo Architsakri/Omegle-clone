@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wdlsvnit/omeclone.git"
+    "url": "git+https://github.com/architsakri/Omegle-clone.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wdlsvnit/omeclone/issues"
+    "url": "https://github.com/architsakri/Omegle-clone"
   },
-  "homepage": "https://github.com/wdlsvnit/omeclone#readme",
+  "homepage": "https://github.com/Architsakri/Omegle-clone#readme",
   "dependencies": {
     "bower": "^1.8.2",
     "express": "^4.16.2",
